@@ -3,19 +3,22 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  background-color: #ffffff;
+  background-color: #f3f5f5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.back {
+  background-color: #ffffff;
 }
 .container {
   width: 1200px;
   margin: 0 auto;
 }
 .header {
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  justify-content: start;
 }
 .info {
   display: flex;
@@ -46,23 +49,75 @@ h2 {
   font-size: 19px;
   color: #9a9e9e;
 }
+h3 {
+  color: #2e3333;
+  padding: 15px 0 15px 0;
+  font-size: 19 px;
+}
+h4 {
+  color: #5d6161;
+  margin-bottom: 9px;
+  font-size: 17px;
+}
 .content {
   background-color: #f3f5f5;
 }
-.order {
+.all {
   display: flex;
   justify-content: space-between;
 }
-.menu {
+.menu-items {
+  display: flex;
   width: 820px;
+  /* background-color: salmon; */
 }
 .cart {
   width: 350px;
 }
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  height: 160px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  margin-right: 9px;
+}
+.dishes {
+  /* background-color: seagreen; */
+  padding: 20px;
+  width: 225px;
+}
+p {
+  color: #9a9e9f;
+  font-size: 14px;
+  height: 1.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 24px;
+}
+.price {
+  color: #9a9e9f;
+  font-size: 16px;
+}
+.in-dish > img {
+  border-radius: 20px;
+}
 .dish {
+  padding: 15px;
   width: 130px;
   height: 130px;
   object-fit: cover;
   object-position: center;
-  border-radius: 6px;
+}
+.pop {
+  padding-left: 5px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #f58004;
 }

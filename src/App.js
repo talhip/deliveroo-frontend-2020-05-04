@@ -4,6 +4,9 @@ import axios from "axios";
 import logo from "./assets/img/logo.svg";
 import Header from "./components/Header";
 import Content from "./components/Content";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faEnvelope, faKey, faStar } from "@fortawesome/free-solid-svg-icons";
+library.add(faEnvelope, faKey, faStar);
 function App() {
   const [restaurant, setRestaurant] = useState({});
   const [isLoading, setIsLoading] = useState(true);

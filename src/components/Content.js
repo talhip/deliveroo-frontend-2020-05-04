@@ -1,4 +1,5 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Content = ({ restaurant }) => {
   const menu = restaurant.categories;
@@ -22,7 +23,10 @@ const Content = ({ restaurant }) => {
                           <div className="price">
                             <span>{meal.price} €</span>
                             {meal.popular ? (
-                              <span className="pop"> Populaire</span>
+                              <span className="pop">
+                                <FontAwesomeIcon icon="star" />
+                                &nbsp;&nbsp;Populaire
+                              </span>
                             ) : null}
                           </div>
                         </div>

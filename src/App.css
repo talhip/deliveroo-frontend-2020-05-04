@@ -86,12 +86,12 @@ h4 {
   background-color: #ffffff;
   border-radius: 5px;
   margin-bottom: 25px;
-  margin-right: 9px;
+  margin-right: 10px;
 }
 .dishes {
   /* background-color: seagreen; */
   padding: 20px;
-  width: 225px;
+  /* width: 225px; */
 }
 p {
   color: #9a9e9f;
@@ -116,7 +116,7 @@ p {
   object-position: center;
 }
 .pop {
-  padding-left: 5px;
+  padding-left: 15px;
   font-size: 13px;
   font-weight: 700;
   color: #f58004;

@@ -18,8 +18,8 @@ function App() {
       );
       setRestaurant(response.data);
       setIsLoading(false);
-    } catch (e) {
-      alert("An error occurred");
+    } catch (error) {
+      console.log(error.message);
     }
   };
 

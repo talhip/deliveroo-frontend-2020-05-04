@@ -30,7 +30,7 @@ function App() {
   return (
     <>
       {isLoading ? (
-        <span>En cours de chargement... </span>
+        <div className="load">En cours de chargement... </div>
       ) : (
         <div>
           <Header restaurant={restaurant} logo={logo} />

@@ -7,6 +7,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.load {
+  color: #5d6161;
+  text-align: center;
+  margin-top: 200px;
+}
 .back {
   background-color: #ffffff;
 }
@@ -91,7 +96,6 @@ h4 {
 .dishes {
   /* background-color: seagreen; */
   padding: 20px;
-  /* width: 225px; */
 }
 p {
   color: #9a9e9f;

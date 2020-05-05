@@ -1,7 +1,8 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Item from "./Item";
+import Cart from "./Cart";
 
-const Content = ({ restaurant }) => {
+const Content = ({ restaurant, cart, setCart }) => {
   const menu = restaurant.categories;
 
   return (
@@ -17,30 +18,12 @@ const Content = ({ restaurant }) => {
                   <div className="flex">
                     {meals.map((meal) => {
                       return (
-                        <div className="item" key={meal.id}>
-                          <div className="dishes">
-                            <h4>{meal.title}</h4>
-                            <p>{meal.description}</p>
-                            <div className="price">
-                              <span>{meal.price} €</span>
-                              {meal.popular ? (
-                                <span className="pop">
-                                  <FontAwesomeIcon icon="star" />
-                                  &nbsp;&nbsp;Populaire
-                                </span>
-                              ) : null}
-                            </div>
-                          </div>
-                          {meal.picture ? (
-                            <div className="in-dish">
-                              <img
-                                className="dish"
-                                alt="dish"
-                                src={meal.picture}
-                              />
-                            </div>
-                          ) : null}
-                        </div>
+                        <Item
+                          key={meal.id}
+                          meal={meal}
+                          cart={cart}
+                          setCart={setCart}
+                        />
                       );
                     })}
                   </div>
@@ -50,7 +33,7 @@ const Content = ({ restaurant }) => {
           );
         })}
       </div>
-      <div className="cart">Valider mon panier</div>
+      <Cart cart={cart} setCart={setCart} />
     </div>
   );
 };

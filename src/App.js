@@ -5,10 +5,15 @@ import logo from "./assets/img/logo.svg";
 import Header from "./components/Header";
 import Content from "./components/Content";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faEnvelope, faKey, faStar } from "@fortawesome/free-solid-svg-icons";
-library.add(faEnvelope, faKey, faStar);
+import {
+  faStar,
+  faPlusCircle,
+  faMinusCircle,
+} from "@fortawesome/free-solid-svg-icons";
+library.add(faStar, faPlusCircle, faMinusCircle);
 function App() {
   const [restaurant, setRestaurant] = useState({});
+  const [cart, setCart] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   const fetchData = async () => {
@@ -34,7 +39,7 @@ function App() {
       ) : (
         <div>
           <Header restaurant={restaurant} logo={logo} />
-          <Content restaurant={restaurant} />
+          <Content restaurant={restaurant} cart={cart} setCart={setCart} />
         </div>
       )}
     </>

@@ -77,7 +77,7 @@ const Cart = ({ cart, setCart }) => {
         </div>
         <div className="total-price deli">
           <span>Frais de livraison</span>
-          <span>{delivery}&nbsp;€</span>
+          <span>{delivery}0&nbsp;€</span>
         </div>
         <div className="total-price numbers">
           <span>Total</span>

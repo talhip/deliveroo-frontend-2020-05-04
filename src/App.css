@@ -156,6 +156,8 @@ p {
   font-size: 22px;
 }
 .bill {
+  position: sticky;
+  top: 30px;
   box-shadow: 0px 0px 5px 3px #ccc;
   background-color: #ffffff;
   padding: 10px;

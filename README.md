@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![capture](/src/assets/img/capture.png)
+
+This project can be seen [here](https://elastic-leakey-2b880d.netlify.app/).
 
 ## Available Scripts
 
